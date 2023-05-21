@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "bgh",
-    "version": "0.0.0"
+    "productName": "superlight",
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -16,6 +16,12 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "all": false,
+        "hide": true,
+        "show": true,
+        "startDragging": true
       }
     },
     "bundle": {
@@ -43,10 +49,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
-        "title": "bgh",
-        "width": 800,
-        "height": 600
+        "resizable": false,
+        "width": 300,
+        "height": 200,
+        "decorations": false
       }
     ]
   }
