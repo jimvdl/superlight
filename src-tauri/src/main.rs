@@ -30,6 +30,7 @@ fn main() -> anyhow::Result<()> {
         let mut socket = Socket::from_ws("ws://localhost:9010")?;
 
         socket.send(Message::with(Method::Get, "/devices/list"))?;
+        socket.send(Message::with(Method::Subscribe, "/battery/state/changed"))?;
 
         loop {
             let message = match socket.receive() {
