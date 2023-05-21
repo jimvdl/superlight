@@ -39,27 +39,3 @@ $(document).ready(() => {
     })
   })
 });
-
-// window.addEventListener("DOMContentLoaded", () => {
-//   $("titlebar-close").on("click", () => {
-//     appWindow.hide()
-//   });
-//   // document
-//   //   .getElementById('titlebar-close')
-//   //   .addEventListener('click', () => appWindow.hide())
-
-//   batteryEl = document.getElementById("battery");
-//   //batteryEl.style.display = "none";
-//   batteryIconEl = document.getElementById("battery-icon");
-//   // batteryIconEl.style.display = "none";
-
-//   listen('battery-update', (event) => {
-//     console.log(event.payload);
-
-//     document.querySelector("#percentage").textContent = event.payload.percentage;
-
-//     document.getElementById("loader").style.display = "none";
-//     batteryEl.style.display = "block";
-//     batteryIconEl.style.display = "block";
-//   })
-// });
